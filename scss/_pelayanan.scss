@@ -1,0 +1,126 @@
+main{
+    width: 100%;
+}
+.family{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    padding: 55px 55px 0 55px;
+}
+.parent1{
+    box-sizing: border-box;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.child1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.group1, .group2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.childone, .childtwo, .childthree, .childfour{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width: 50%;
+    height: 230px;
+    z-index: 2;
+    h2{
+        color: rgba(255, 255, 255, .7);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: 230px;
+        z-index: 1;
+    }
+    ::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: rgba(49, 47, 47, 0.7)
+    }
+}
+.childone{
+    background-image: url(foto/bocil.jpg);
+    background-size: 100% 100%;
+}
+.childtwo{
+    background-image: url(foto/remaja.jpg);
+    background-size: 100% 120%;
+    background-position: 0 40%;
+}
+.childthree{
+    background-image: url(foto/parent.jpg);
+    background-size: 100% 120%;
+    background-position: 0 50%;
+}
+.childfour{
+    background-image: url(foto/tua.jpg);
+    background-size: 100% 120%;
+    background-position: 0 40%;
+}
+aside{
+    width: 40%;
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+.ortu{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(87, 109, 111, 0.1);
+    padding: 15px;
+}
+.anak1, .anak2, .anak3{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    height: 148px;
+    img{
+        margin-left: 5px;
+        width: 150px;
+    }
+}
+.cucu1, .cucu2, .cucu3{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    gap: 15px;
+    padding: 0;
+    width: 90%;
+    padding: 10px;
+    h4,p{
+        margin: 0;
+        padding: 0;
+    }
+}

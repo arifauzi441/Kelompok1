@@ -1,0 +1,39 @@
+.abt1{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 40px 0 80px;
+    margin: 100px 0;
+    width: 100%;
+    &-isi{
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+        .gambarrr{
+            width: 100%;
+            height: 450px;
+            border-radius: 30%;
+            box-shadow: -40px 0px #4A4848;
+            box-sizing: border-box;
+        }
+    }
+    .tulisan{
+        box-sizing: border-box;
+        width: 55%;
+        padding: 20px 20px 20px 0;
+        h1, h2{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            font-size: 35px;
+        }
+        p{
+            color: black;
+            font-size: 17px;
+        }
+    }
+}

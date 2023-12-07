@@ -1,0 +1,52 @@
+footer {
+    background-color: #1D262B;
+    padding: 10px 30px 3px 30px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+
+    p, h4, h3 {
+      color: white;
+    }
+  
+    .teks {
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  
+    .image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:hover{
+        opacity: .3;
+        color: white;
+      }
+      img {
+        width: 200px;
+        height: 150px;
+      }
+    }
+  
+    .about,
+    .office {
+      width: 400px;
+      height: 129px;
+      font-size: 19px;
+    }
+  
+    .office {
+      text-align: right;
+    }
+  
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+ 
+  

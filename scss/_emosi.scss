@@ -1,0 +1,95 @@
+.sec{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 150px;
+    width: 100%;
+    &-sad, &-angry, &-happy, &-stress, &-hopeless{
+        width: 20%;
+        height: 375px;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: center;
+        padding: 16% 5px 0px 5px;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        box-shadow: 1px 2px 6px 1px #888888;
+        p{
+            color: rgba(255, 255, 255, .7);
+        }
+    }
+    &-sad{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("foto/emosi1.jpg"),;
+    }
+    &-angry{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("foto/emosi2.jpg"),;
+    }
+    &-happy{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("foto/emosi3.jpg"),;
+    }
+    &-stress{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("foto/emosi4.jpg"),;
+    }
+    &-hopeless{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("foto/emosi5.jpg"),;
+    }
+}
+.sec2{
+    background-image: linear-gradient(to right,rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url("foto/duduk.jpg");
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 603px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 80px;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 8px 2px #888888;
+    &-img{
+        h1{
+            font-size: 35px;
+            line-height: 1.5;
+            width: 650px;
+            height: 100px;
+            color: white;
+        }
+    }
+}
+.sec-line{
+    position: relative;
+    bottom: 175px;
+    margin-bottom: -15px;
+    hr{
+        width: 99.8%;
+        color: #EAE5D8;
+    }
+    &-teks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+    &-teks1, &-teks2, &-teks3{
+        color: white;
+        width: 340px;
+        height: 91px;
+        border: none;
+        background-color: #A6A5A566;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px 0px 15px;
+        box-sizing: border-box;
+    }
+}

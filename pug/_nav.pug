@@ -1,0 +1,13 @@
+mixin navbar(link1,link2,link3,link4,profil,button,isi1,isi2,isi3,name_logo,logo)
+    nav.nav
+        div.nav__items
+            .nav__user(href=link1)
+                img(src="foto/user.png", alt="user")
+            button.nav__login=button
+            .nav__isi 
+                a.nav__isi__a(href=link2)=isi1
+                a.nav__isi__a(href=link3)=isi2
+                a.nav__isi__a(href=link4)=isi3
+        a.nav__items2(href=link1)
+            h4.nav__logo__name=name_logo   
+            img.nav__logo(src=logo, alt="Logo")

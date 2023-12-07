@@ -1,0 +1,12 @@
+mixin contactmenu()
+    -menus= [{icon:'fa-solid fa-phone',nama_menu:'Call Us',teks:'Jangan ragu untuk menghubungi tim kami.Para ahli psikolog kami siap membantu Anda dalam mengatasi berbagai tantangan mental dan emosional. Dengan layanan yang ramah dan rahasia',button:'Call Now'},{icon:'fa-solid fa-envelope',nama_menu:'Ask a Question',teks:'Jika Anda memiliki pertanyaan atau butuh saran psikologis, tim PsychSoc siap menjawabnya. Silahkan pencet tombol dibawah,dan salah satu psikolog kami akan merespons secepat mungkin',button:'Get Started'},{icon:'fa-solid fa-comment',nama_menu:'Chat Live',teks:'Kami menyediakan layanan obrol langsung yang dapat diakses melalui situs web kami. Jika Anda membutuhkan dukungan segera atau hanya ingin berbicara dengan seseorang',button:'Chat Now'}]
+    .container
+        each menu in menus 
+            .menu
+                .icon 
+                    i(class= menu.icon)
+                .deskription 
+                    h2= menu.nama_menu 
+                    p= menu.teks 
+                button= menu.button
+        

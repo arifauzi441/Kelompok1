@@ -1,0 +1,18 @@
+mixin ahli()  
+    -identitas= [{imgSrc:'foto/orang.jpg',nama:'Dokter Yoga',deskripsi:'Dr. Yoga berfokus membantu individu mengatasi gangguan mental seperti kecemasan dan depresi',pengalaman:'Pengalaman 4thn'},{imgSrc:'foto/orang2.jpg',nama:'Dokter Aqil',deskripsi:'Dr. Aqil membantu individu menemukan arah karier yang sesuai dengan minat dan potensi mereka',pengalaman:'Pengalaman 4thn'},{imgSrc:'foto/orang3.jpg',nama:'Dokter Anna',deskripsi:'Dr. Anna membawa keahlian dalam psikologi sosial dan konseling keluarga',pengalaman:'Pengalaman 3thn'},{imgSrc:'foto/orang4.jpg',nama:'Dokter Calvin',deskripsi:'Dr. Calvin adalah seorang psikolog yang berfokus pada perkembangan anak dan remaja',pengalaman:'Pengalaman 2thn'},{imgSrc:'foto/orang5.jpg',nama:'Dokter Zhang',deskripsi:'Dr. Zhang memiliki pemahaman mendalam tentang kesejahteraan psikologis di lingkungan kerja',pengalaman:'Pengalaman 5thn'}]  
+    .svg
+    .ahli 
+        .judul 
+            h1 TENAGA AHLI
+            p PsychSoc memiliki tim psikolog berlisensi dan berpengalaman dengan latar belakang yang beragam, memastikan pendekatan holistik untuk setiap kasus.
+        .tenaga_ahli
+            each identiti in identitas
+                .wadah
+                    img(src=identiti.imgSrc)
+                    .identitas  
+                        h1= identiti.nama 
+                        p= identiti.deskripsi 
+                    .pengalaman 
+                        h3= identiti.pengalaman 
+                        a(href= '') profile
+            

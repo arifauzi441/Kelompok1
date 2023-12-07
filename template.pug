@@ -1,0 +1,26 @@
+include pug/_ahli.pug
+include pug/_contactinfo.pug
+include pug/_contactmenu.pug
+include pug/_footer.pug
+include pug/_nav.pug
+include pug/_header.pug
+include pug/_comments.pug
+include pug/_pelayanan.pug
+include pug/_profil.pug
+include pug/_emosi.pug
+include pug/_blog.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        script(src="https://kit.fontawesome.com/3f0f1bca14.js" crossorigin="anonymous")
+        block rel
+            link(rel="stylesheet", href="scss/ahli.css")
+    body  
+        +navbar('index.html','blog.html','about.html','contact.html','img/user.png','Login','Blog','About','Contact','PSYCHSOC','foto/logo.png')
+        block header
+        block main 
+        +footer('About Companies', 'PsychSoc menyediakan jasa psikolog untuk membantu individu dan keluarga mencapai kesejahteraan mental dan emosional.', 'office', 'Sumenep, Kec. Kota Sumenep, Jawa Timurbpsychsoccompany@gmail.com Privacy Policy,') 

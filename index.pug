@@ -1,0 +1,10 @@
+extends template.pug 
+block rel 
+    link(rel="stylesheet", href="index.css")
+block header 
+    block header 
+    +header('UNTUK HIDUPMU YANG LEBIH BAIK','Kehidupan yang baik adalah sebuah proses, bukan suatu keadaan yang ada dengan sendirinya')
+block main
+    +pelayanan()
+    +ahli()
+    +comment('instagram', 'facebook', 'x-twitter', 'youtube')
